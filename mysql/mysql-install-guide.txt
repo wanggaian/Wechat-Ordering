@@ -1,0 +1,61 @@
+1.下载Download MySQL Community Server
+
+2.解压安装mysql-5.7.23-winx64.zip
+
+3.PATH 环境变量配置:%MySQL%\bin   (注MySQL 为加压路径)
+
+4.管理员身份命令行进入mysql安装的bin目录下输入 mysqld -install 再回车 (若以前安装过 先卸载干净https://jingyan.baidu.com/article/425e69e61a1b64be15fc1604.html)
+
+5.在MySQL安装根目录下创建my.ini文件,其内容如下,然后执行命令行 mysqld --initialize
+[mysql]
+
+# 设置mysql客户端默认字符集
+default-character-set=utf8 
+ 
+
+
+[mysqld]
+
+#设置3306端口
+
+port = 3306
+
+#设置mysql的安装目录
+
+basedir=D:\App\MySQL
+
+#设置mysql数据库的数据的存放目录
+
+datadir=D:\App\MySQL\data
+
+#允许最大连接数
+
+max_connections=200
+
+#服务端使用的字符集默认为8比特编码的latin1字符集
+
+character-set-server=utf8
+
+#创建新表时将使用的默认存储引擎
+
+default-storage-engine=INNODB
+
+6.开启mysql执行 net start mysql
+
+7.关闭mysql执行 net stop mysql
+
+8.设置无密码mysqld --skip-grant-tables
+
+9.新开一个窗口,mysql -u root
+
+10.flush privileges; 刷新权限
+
+11.grant all privileges on *.* to 'root'@'localhost' identified by '你想设置的密码' with grant option;
+
+12.flush privileges;
+
+13.执行exit退出 MySQL
+
+14.任务管理器手动结束mysqld.exe
+
+15.net mysql start重启开启服务 mysql -u root -p 你设置的密码 登录即可
