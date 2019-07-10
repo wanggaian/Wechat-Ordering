@@ -1,0 +1,9 @@
+1. 虚拟机 vm visualbox 轻量/免费开源
+
+2. ping 192.168.214.129  查看网络
+
+3. sequel pro数据库图形化界面for Mac
+
+4. 创建数据库sell, 字符集为utf8mb4, (相比于utf8可以存储微信表情)
+
+5. 
