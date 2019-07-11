@@ -17,4 +17,6 @@
 6. 快速构建项目
 spring-initial -> 项目名 -> 选择 spring web starter
 
-7. 
+7. 日志框架: 日志门面slf4j + 日志实现logback(log4j作者升级作品)
+
+8. 

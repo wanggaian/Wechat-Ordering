@@ -1,0 +1,23 @@
+2019-07-12 00:23:26,534 - Starting LogTest on DESKTOP-8MCTDS8 with PID 9224 (started by wanggaian in D:\project\weixin_sell\Wechat-Ordering)
+2019-07-12 00:23:26,534 - No active profile set, falling back to default profiles: default
+2019-07-12 00:23:29,133 - Initializing ExecutorService 'applicationTaskExecutor'
+2019-07-12 00:23:29,606 - Started LogTest in 4.031 seconds (JVM running for 5.927)
+2019-07-12 00:23:30,438 - info...
+2019-07-12 00:23:30,439 - error...
+2019-07-12 00:23:30,439 - useradmin, password123
+2019-07-12 00:23:30,466 - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-07-12 00:28:36,339 - error...
+2019-07-12 00:32:39,737 - Starting LogTest on DESKTOP-8MCTDS8 with PID 6884 (started by wanggaian in D:\project\weixin_sell\Wechat-Ordering)
+2019-07-12 00:32:39,738 - No active profile set, falling back to default profiles: default
+2019-07-12 00:32:42,304 - Initializing ExecutorService 'applicationTaskExecutor'
+2019-07-12 00:32:42,678 - Started LogTest in 3.954 seconds (JVM running for 5.979)
+2019-07-12 00:32:43,449 - info...
+2019-07-12 00:32:43,449 - useradmin, password123
+2019-07-12 00:32:43,571 - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-07-12 00:34:22,549 - Starting LogTest on DESKTOP-8MCTDS8 with PID 11744 (started by wanggaian in D:\project\weixin_sell\Wechat-Ordering)
+2019-07-12 00:34:22,549 - No active profile set, falling back to default profiles: default
+2019-07-12 00:34:24,349 - Initializing ExecutorService 'applicationTaskExecutor'
+2019-07-12 00:34:24,781 - Started LogTest in 2.814 seconds (JVM running for 3.729)
+2019-07-12 00:34:25,620 - info...
+2019-07-12 00:34:25,620 - useradmin, password123
+2019-07-12 00:34:25,640 - Shutting down ExecutorService 'applicationTaskExecutor'

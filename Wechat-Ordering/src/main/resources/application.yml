@@ -1,0 +1,17 @@
+server:
+  port: 8080
+#  context-path: /sell
+spring:
+  application:
+    name: sell
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://192.168.0.109/sell?characterEncoding?utf-8&useSSL=false
+    data-username: root
+    data-password: 123456
+#logging:
+#  pattern:
+#    console: "%d - %msg%n"
+#    file: D:/project/weixin_sell/Wechat-Ordering
+#    level:
+#      com.wga.sell.service.LogTest: debug
