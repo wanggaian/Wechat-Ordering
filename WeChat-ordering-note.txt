@@ -17,4 +17,4 @@
 6. 快速构建项目
 spring-initial -> 项目名 -> 选择 spring web starter
 
-7. 
+7. lombok插件减少重复开发量
