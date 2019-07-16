@@ -1,8 +1,15 @@
 package com.wga.sell.dataobject;
 
+import lombok.Data;
+import org.hibernate.annotations.DynamicInsert;
+import org.hibernate.annotations.DynamicUpdate;
+import org.hibernate.annotations.Proxy;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import java.io.Serializable;
 import java.util.Date;
 
 /**
@@ -11,12 +18,17 @@ import java.util.Date;
  * @Author wanggaian
  * @Date 2019/7/13 17:57
  */
-@Entity
-public class ProductCategory {
+@Entity()
+@DynamicUpdate
+@DynamicInsert
+@Data
+//@Proxy(lazy = false)
+// spring-boot 默认延迟加载去除
+public class ProductCategory implements Serializable {
 
     /** 类目id */
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer categoryId;
 
     /** 类目名 */
@@ -31,54 +43,18 @@ public class ProductCategory {
     /** 更新时间 */
     private Date updateTime;
 
-    public Integer getCategoryId() {
-        return categoryId;
+    public ProductCategory() {
     }
 
-    public void setCategoryId(Integer categoryId) {
-        this.categoryId = categoryId;
-    }
-
-    public String getCategoryName() {
-        return categoryName;
-    }
-
-    public void setCategoryName(String categoryName) {
+    public ProductCategory(String categoryName, Integer categoryType) {
         this.categoryName = categoryName;
-    }
-
-    public Integer getCategoryType() {
-        return categoryType;
-    }
-
-    public void setCategoryType(Integer categoryType) {
         this.categoryType = categoryType;
     }
 
-    public Date getCreateTime() {
-        return createTime;
-    }
-
-    public void setCreateTime(Date createTime) {
+    public ProductCategory(String categoryName, Integer categoryType, Date createTime, Date updateTime) {
+        this.categoryName = categoryName;
+        this.categoryType = categoryType;
         this.createTime = createTime;
-    }
-
-    public Date getUpdateTime() {
-        return updateTime;
-    }
-
-    public void setUpdateTime(Date updateTime) {
         this.updateTime = updateTime;
-    }
-
-    @Override
-    public String toString() {
-        return "ProductCategory{" +
-                "categoryId=" + categoryId +
-                ", categoryName='" + categoryName + '\'' +
-                ", categoryType=" + categoryType +
-                ", createTime=" + createTime +
-                ", updateTime=" + updateTime +
-                '}';
     }
 }
